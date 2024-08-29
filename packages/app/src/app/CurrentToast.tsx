@@ -15,7 +15,6 @@ export function CurrentToast() {
       enterStyle={{ opacity: 0, scale: 0.5, y: -25 }}
       exitStyle={{ opacity: 0, scale: 1, y: -20 }}
       y={isWeb ? '$12' : 0}
-      theme='purple'
       br='$6'
       animation='quick'
     >
