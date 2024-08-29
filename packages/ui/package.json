@@ -18,7 +18,9 @@
         "types": "./dist/typescript/commonjs/src/index.d.ts",
         "default": "./dist/commonjs/index.js"
       }
-    }
+    },
+    "./tamagui.config": "./tamagui.config.ts",
+    "./tamagui.config.ts": "./tamagui.config.ts"
   },
   "scripts": {
     "build": "bob build",
