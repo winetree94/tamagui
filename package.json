@@ -6,6 +6,7 @@
     "./packages/*"
   ],
   "scripts": {
+    "start": "bun run --filter=\"@expo-app/app\" start",
     "clean": "bun run --filter=\"*\" clean && rimraf node_modules"
   },
   "devDependencies": {
