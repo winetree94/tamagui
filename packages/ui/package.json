@@ -30,7 +30,7 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.74.5",
-    "tamagui": "^1.109.5"
+    "tamagui": "^1.109.8"
   },
   "devDependencies": {
     "@expo-app/lint": "workspace:@",
