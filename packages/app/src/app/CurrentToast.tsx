@@ -1,5 +1,6 @@
 import { Toast, useToastController, useToastState } from '@tamagui/toast';
 import { Button, H4, XStack, YStack, isWeb } from 'tamagui';
+import { MyExpoButton } from '@expo-app/ui';
 
 export function CurrentToast() {
   const currentToast = useToastState();
@@ -35,7 +36,7 @@ export function ToastControl() {
     <YStack gap='$2' ai='center'>
       <H4>Toast demo</H4>
       <XStack gap='$2' jc='center'>
-        <Button
+        <MyExpoButton
           onPress={() => {
             toast.show('Successfully saved!', {
               message: "Don't worry, we've got your data.",
@@ -43,7 +44,7 @@ export function ToastControl() {
           }}
         >
           Show
-        </Button>
+        </MyExpoButton>
         <Button
           onPress={() => {
             toast.hide();

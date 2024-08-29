@@ -10,6 +10,9 @@
     "./eslint.config.js": "./eslint.config.js",
     "./prettier.config.js": "./prettier.config.js"
   },
+  "scripts": {
+    "clean": "rimraf node_modules"
+  },
   "dependencies": {
     "@types/bun": "latest",
     "typescript": "^5.0.0",
@@ -21,5 +24,8 @@
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
     "typescript-eslint": "^8.3.0"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   }
 }
