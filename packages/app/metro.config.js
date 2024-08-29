@@ -29,7 +29,7 @@ config.resolver.nodeModulesPaths = [
 const { withTamagui } = require('@tamagui/metro-plugin');
 module.exports = withTamagui(config, {
   components: ['tamagui'],
-  config: './tamagui.config.ts',
+  config: '../ui/tamagui.config.ts',
   outputCSS: './src/assets/tamagui-web.css',
 });
 

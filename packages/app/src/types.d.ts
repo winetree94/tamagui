@@ -1,6 +1,8 @@
-// export type Conf = typeof config;
+import { config } from '@expo-app/ui/tamagui.config';
 
-// declare module 'tamagui' {
-//   // eslint-disable-next-line @typescript-eslint/no-empty-object-type
-//   interface TamaguiCustomConfig extends Conf {}
-// }
+export type Conf = typeof config;
+
+declare module 'tamagui' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  interface TamaguiCustomConfig extends Conf {}
+}
