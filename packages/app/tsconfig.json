@@ -1,41 +1,21 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "baseUrl": "./src",
-    "rootDir": ".",
-    "importHelpers": true,
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "downlevelIteration": true,
-    "esModuleInterop": true,
-    "preserveSymlinks": true,
-    "incremental": true,
-    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
     "strict": true,
-    "noEmitOnError": false,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "useUnknownInCatchVariables": true,
-    "preserveConstEnums": true,
-    // DONT DO THIS so jsdoc will remain
-    "removeComments": false,
-    "skipLibCheck": true,
-    "sourceMap": false,
-    "strictNullChecks": true,
-    "target": "es2020",
-    "types": ["node"],
-    "lib": ["dom", "esnext"],
-    "module": "Node16",
-    "moduleResolution": "Node16",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@expo-app/ui": [
+        "../ui/src/index.tsx"
+      ]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
-  "exclude": ["_"],
-  "typeAcquisition": {
-    "enable": true
-  }
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
 }
