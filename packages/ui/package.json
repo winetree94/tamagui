@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "bob build",
-    "generate-themes": "tamagui generate-themes ./theme-builder.ts ./src/theme.ts",
+    "generate-themes": "tamagui generate-themes ./theme-builder.ts ./theme.ts",
     "clean": "rimraf dist node_modules"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@expo-app/lint": "workspace:@",
+    "@tamagui/cli": "^1.109.8",
     "@types/react": "~18.2.45",
     "react-native-builder-bob": "^0.30.0",
     "rimraf": "^6.0.1",
