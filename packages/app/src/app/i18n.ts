@@ -17,11 +17,13 @@ const initI18n = async () => {
     savedLanguage = Localization.getLocales()[0].languageCode || 'ko';
   }
 
+  console.log('language: ', savedLanguage);
+
   i18n.use(initReactI18next).init({
     compatibilityJSON: 'v3',
     resources,
     lng: savedLanguage,
-    fallbackLng: 'ko-KR',
+    fallbackLng: 'en-US',
     interpolation: {
       escapeValue: false,
     },

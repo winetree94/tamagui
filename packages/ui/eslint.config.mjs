@@ -1,3 +1,3 @@
-import lintConfig from '@expo-app/lint/eslint.config.js';
+import lintConfig from '../../eslint.config.mjs';
 
 export default [...lintConfig];

@@ -28,17 +28,28 @@
     "clean": "rimraf dist node_modules"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "react": "18.2.0",
     "react-native": "0.74.5",
-    "tamagui": "^1.109.8"
+    "tamagui": "^1.109.8",
+    "zod": "^3.23.8",
+    "react-hook-form": "^7.53.0"
   },
   "devDependencies": {
-    "@expo-app/lint": "workspace:@",
     "@tamagui/cli": "^1.109.8",
     "@types/react": "~18.2.45",
     "react-native-builder-bob": "^0.30.0",
     "rimraf": "^6.0.1",
-    "typescript": "~5.3.3"
+    "typescript": "~5.3.3",
+    "@types/bun": "latest",
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.3.0"
   },
   "react-native-builder-bob": {
     "source": "src",

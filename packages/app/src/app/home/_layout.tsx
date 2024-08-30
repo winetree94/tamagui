@@ -2,9 +2,9 @@ import { useAuthStore } from '@/store/auth';
 import { Redirect, Stack } from 'expo-router';
 
 export default function HomeLayout() {
-  const uid = useAuthStore((auth) => auth.uid);
+  const user = useAuthStore((auth) => auth.user);
 
-  if (!uid) {
+  if (!user) {
     return <Redirect href='/auth/sign-in' />;
   }
 

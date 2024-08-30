@@ -14,8 +14,8 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@expo-app/lint": "workspace:@",
     "@expo-app/ui": "workspace:@",
+    "@hookform/resolvers": "^3.9.0",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-navigation/native": "^6.1.17",
     "@tamagui/config": "^1.109.8",
@@ -33,8 +33,10 @@
     "expo-system-ui": "~3.0.7",
     "expo-web-browser": "~13.0.3",
     "i18next": "^23.14.0",
+    "immer": "^10.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.53.0",
     "react-i18next": "^15.0.1",
     "react-native": "0.74.5",
     "react-native-reanimated": "~3.10.1",
@@ -43,6 +45,7 @@
     "react-native-svg": "15.2.0",
     "react-native-web": "^0.19.12",
     "tamagui": "^1.109.8",
+    "zod": "^3.23.8",
     "zustand": "^4.5.5"
   },
   "devDependencies": {
@@ -54,7 +57,16 @@
     "@types/react": "~18.2.79",
     "@types/react-native": "^0.73.0",
     "rimraf": "^6.0.1",
-    "typescript": "~5.3.3"
+    "typescript": "~5.3.3",
+    "@types/bun": "latest",
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.3.0"
   },
   "private": true,
   "packageManager": "yarn@4.0.2"

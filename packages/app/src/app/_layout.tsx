@@ -59,6 +59,12 @@ function RootLayoutNav() {
             }}
           />
           <Stack.Screen
+            name='auth'
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
             name='modal'
             options={{
               title: 'Tamagui + Expo',

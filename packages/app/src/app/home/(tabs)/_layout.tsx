@@ -1,6 +1,7 @@
 import { Link, Tabs } from 'expo-router';
 import { Button, useTheme } from 'tamagui';
 import { Atom, AudioWaveform } from '@tamagui/lucide-icons';
+import { t } from 'i18next';
 
 export default function TabLayout() {
   const theme = useTheme();
@@ -30,6 +31,14 @@ export default function TabLayout() {
         name='two'
         options={{
           title: 'Tab Two',
+          tabBarIcon: ({ color }) => <AudioWaveform color={color} />,
+          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name='chat'
+        options={{
+          title: t('chat.title'),
           tabBarIcon: ({ color }) => <AudioWaveform color={color} />,
           headerShown: false,
         }}

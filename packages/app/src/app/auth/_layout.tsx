@@ -7,9 +7,20 @@ export const unstable_settings = {
 };
 
 export default function Auth() {
-  const uid = useAuthStore((auth) => auth.uid);
-  if (uid) {
+  const user = useAuthStore((auth) => auth.user);
+  if (user) {
     return <Redirect href='/home' />;
   }
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen
+        name='sign-in'
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+      <Stack.Screen
+        name='sign-up'
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+    </Stack>
+  );
 }

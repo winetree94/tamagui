@@ -2,9 +2,9 @@ import { useAuthStore } from '@/store/auth';
 import { Redirect } from 'expo-router';
 
 export default function NotFoundScreen() {
-  const uid = useAuthStore((auth) => auth.uid);
+  const user = useAuthStore((auth) => auth.user);
 
-  if (uid) {
+  if (user) {
     return <Redirect href='/home' />;
   } else {
     return <Redirect href='/auth' />;

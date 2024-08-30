@@ -1,3 +1,3 @@
-import prettierConfigs from '@expo-app/lint/prettier.config.js';
+import prettierConfigs from '../../prettier.config.mjs';
 
 export default prettierConfigs;
