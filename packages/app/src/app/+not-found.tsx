@@ -1,38 +1,12 @@
-import { Link, Stack } from 'expo-router';
-import { StyleSheet } from 'react-native';
-import { View, Text } from 'tamagui';
+import { useAuthStore } from '@/store/auth';
+import { Redirect } from 'expo-router';
 
 export default function NotFoundScreen() {
-  return (
-    <>
-      <Stack.Screen options={{ title: 'Oops!' }} />
-      <View margin={10}>
-        <Text>This screen doesnt exist.</Text>
-        <Link href='/' style={styles.link}>
-          <Text style={styles.linkText}>Go to home screen!</Text>
-        </Link>
-      </View>
-    </>
-  );
-}
+  const uid = useAuthStore((auth) => auth.uid);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  link: {
-    marginTop: 15,
-    paddingVertical: 15,
-  },
-  linkText: {
-    fontSize: 14,
-    color: '#2e78b7',
-  },
-});
+  if (uid) {
+    return <Redirect href='/home' />;
+  } else {
+    return <Redirect href='/auth' />;
+  }
+}

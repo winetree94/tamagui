@@ -23,6 +23,7 @@ export default function TabLayout() {
               </Button>
             </Link>
           ),
+          headerShown: false,
         }}
       />
       <Tabs.Screen
@@ -30,6 +31,7 @@ export default function TabLayout() {
         options={{
           title: 'Tab Two',
           tabBarIcon: ({ color }) => <AudioWaveform color={color} />,
+          headerShown: false,
         }}
       />
     </Tabs>

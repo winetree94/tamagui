@@ -1,9 +1,10 @@
 import { Toast, useToastController, useToastState } from '@tamagui/toast';
-import { Button, H4, XStack, YStack, isWeb } from 'tamagui';
+import { Button, H4, XStack, YStack, getTokens, isWeb } from 'tamagui';
 import { MyExpoButton } from '@expo-app/ui';
 
 export function CurrentToast() {
   const currentToast = useToastState();
+  const token = getTokens();
 
   if (!currentToast || currentToast.isHandledNatively) return null;
 
@@ -14,8 +15,8 @@ export function CurrentToast() {
       viewportName={currentToast.viewportName}
       enterStyle={{ opacity: 0, scale: 0.5, y: -25 }}
       exitStyle={{ opacity: 0, scale: 1, y: -20 }}
-      y={isWeb ? '$12' : 0}
-      br='$6'
+      y={isWeb ? token.size.$12 : token.size.$0}
+      br={token.size.$6}
       animation='quick'
     >
       <YStack ai='center' p='$2' gap='$2'>
